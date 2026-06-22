@@ -2,56 +2,157 @@
 <html>
 <head>
 <title>NUMA Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body{
-font-family:Arial;
-background:#111;
-color:white;
-text-align:center;
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
 header{
 background:black;
 padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
-h1{
+
+.logo{
+font-size:32px;
+font-weight:bold;
 color:gold;
 }
-button{
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(to right,#111,#222);
+}
+
+.hero h1{
+font-size:50px;
+color:gold;
+}
+
+.hero p{
+margin-top:15px;
+font-size:20px;
+}
+
+.btn{
+margin-top:20px;
 background:gold;
-border:none;
+color:black;
 padding:12px 25px;
+border:none;
+border-radius:8px;
+font-weight:bold;
 cursor:pointer;
 }
-.product{
-display:inline-block;
-margin:20px;
+
+.products{
+padding:50px 20px;
+}
+
+.products h2{
+text-align:center;
+margin-bottom:30px;
+color:gold;
+}
+
+.grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:#1c1c1c;
 padding:20px;
-background:#222;
+border-radius:15px;
+width:250px;
+text-align:center;
+}
+
+.card img{
+width:100%;
 border-radius:10px;
+}
+
+.price{
+color:gold;
+font-size:20px;
+margin-top:10px;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:20px;
+margin-top:50px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>NUMA Store</h1>
-<p>Premium Fashion & Jewelry</p>
+<div class="logo">NUMA STORE</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
 </header>
 
+<section class="hero">
+<h1>Luxury Jewellery Collection</h1>
+<p>Discover Premium Fashion & Accessories</p>
+<button class="btn">Shop Now</button>
+</section>
+
+<section class="products">
 <h2>Trending Products</h2>
 
-<div class="product">
+<div class="grid">
+
+<div class="card">
 <h3>Gold Necklace</h3>
-<p>₹999</p>
-<button>Buy Now</button>
+<p class="price">₹999</p>
 </div>
 
-<div class="product">
+<div class="card">
 <h3>Premium Ring</h3>
-<p>₹499</p>
-<button>Buy Now</button>
+<p class="price">₹499</p>
 </div>
+
+<div class="card">
+<h3>Bracelet</h3>
+<p class="price">₹799</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 NUMA Store
+</footer>
 
 </body>
 </html>
